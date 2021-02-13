@@ -1,7 +1,7 @@
 # Python
 
 <div>
-  <img src="img/pythonlogo.png" width="8000px"/>
+  <img src="img/pythonlogo.png" width="2000px"/>
 </div>
 
 <!-- ************************************* Baadges ********************************************* -->
@@ -27,12 +27,9 @@
 
 * PYTHON
 
-
 <h3>🧰 Ferramentas</h3>
 
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE de Desenvolvimento. 
-
-</br>
 
 <h3 id="referencias"> ⚓ Referências</h3>
 
