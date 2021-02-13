@@ -1,7 +1,7 @@
 # Python
 
 <div>
-  <img src="img/pythonlogo.png" width="2000px"/>
+  <img src="img/pythonlogo.png"/>
 </div>
 
 <!-- ************************************* Baadges ********************************************* -->
