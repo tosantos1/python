@@ -1,7 +1,7 @@
-nome = "Tiago" String
-idade = 23 int
-altura = 1.79 float
-is_male = True / False bool
+nome = "Tiago" #String
+idade = 23 #int
+altura = 1.79 #float
+is_male = True / False #bool
 gosto_de = "Queijo"
 
 print(f"Meu nome é {nome}.") 
