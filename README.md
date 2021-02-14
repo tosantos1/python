@@ -35,3 +35,6 @@
 
 * [Refatorando](https://youtu.be/Jk4kuuwLThA) - Curso de Python para iniciantes #01
 * [Curso em vídeo](https://youtu.be/S9uPNppGsGo) - Curso Python #01 
+
+---
+⌨️ com ❤️ por [Tiago Oliveira](https://gist.github.com/tosantos1) 😊
