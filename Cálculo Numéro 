@@ -1,0 +1,226 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPdOPlM9+W4wVZyQAex0new",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tosantos1/python/blob/main/C%C3%A1lculo%20Num%C3%A9ro%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4GxVyErr3QL8"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jIPLqMSI3TiL"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tcGc9FROqRvf"
+      },
+      "source": [
+        "**Q2: Faça um programa capaz de calcular o fatorial de um número \"n\" digitado pelo usuário, utilizando laço FOR.**"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lj1wpN5-3YPp",
+        "outputId": "a0f34aa1-f2f5-4ae4-b4e9-b6a368e6431e"
+      },
+      "source": [
+        "number = int(input())\n",
+        "\n",
+        "factorial = 1\n",
+        "\n",
+        "for i in range(1, number + 1):\n",
+        "    factorial = factorial * i\n",
+        "\n",
+        "print(\"Factorial of \" + str(number) + \"its: \" + str(factorial))\n",
+        "\n"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "3\n",
+            "Factorial of 3its: 6\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "OzOJ-VLw8jVB"
+      },
+      "source": [
+        "Python: Fatorial utilizando o módulo math.\n",
+        "\n",
+        "Importe o módulo math e calcule o fatorial de um número digitado pelo usuário utilizando math.factorial()."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "eu2x9odl8nxm"
+      },
+      "source": [
+        "import math\n",
+        "\n",
+        "n = int(input())\n",
+        "f = math.factorial(n)\n",
+        "\n",
+        "print(f)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "l0TIwXpI8yKA"
+      },
+      "source": [
+        "Python: Ordena vetor e calcula a mediana\n",
+        "Faça um programa capaz de receber 5 números em ponto flutuante, ordenar esses números e apresentar o vetor ordenado e o valor da mediana dos números recebidos."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-UMHOWdK82CP",
+        "outputId": "4d7a13ab-05b0-4af7-fcee-de993c0b259e"
+      },
+      "source": [
+        "vetor = []\n",
+        "for x in range(5):\n",
+        "  n = int(input())\n",
+        "  vetor.append(n)\n",
+        "  vetor.sort()\n",
+        "\n",
+        "print(vetor)\n"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "5\n",
+            "3\n",
+            "9\n",
+            "4\n",
+            "8\n",
+            "[3, 4, 5, 8, 9]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2uWCMnfv_Hsu",
+        "outputId": "2b4ca9d0-cc15-4099-9862-dd3b2a31478d"
+      },
+      "source": [
+        "lista = []\n",
+        "flag = False\n",
+        "\n",
+        "for x in range(8):\n",
+        "\n",
+        "    tamanho = len(lista)\n",
+        "\n",
+        "    n = int(input(\"Digite um número inteiro: \"))\n",
+        "\n",
+        "    if( tamanho > 0 ):\n",
+        "\n",
+        "        for y in range( tamanho ):\n",
+        "\n",
+        "            if ( n <= lista[y] ):\n",
+        "\n",
+        "                lista.insert( y, n )\n",
+        "\n",
+        "                flag = True\n",
+        "\n",
+        "                break\n",
+        "\n",
+        "    if((x == 0) or (flag == False)):\n",
+        "\n",
+        "        lista.append( n )\n",
+        "\n",
+        "    else:\n",
+        "\n",
+        "        flag = False\n",
+        "\n",
+        "print(lista)"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um número inteiro: 5\n",
+            "Digite um número inteiro: 3\n",
+            "Digite um número inteiro: 4\n",
+            "Digite um número inteiro: 5\n",
+            "Digite um número inteiro: 6\n",
+            "Digite um número inteiro: 10\n",
+            "Digite um número inteiro: 9\n",
+            "Digite um número inteiro: 8\n",
+            "[3, 4, 5, 5, 6, 8, 9, 10]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
